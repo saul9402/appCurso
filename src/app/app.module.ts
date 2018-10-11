@@ -5,11 +5,13 @@ import { NgModule } from '@angular/core';
 //del archivo que se pretende importar y se le da la ruta de donde lo va a encontrar
 import { AppComponent } from './app.component';
 import { FechaactualComponent } from './fechaactual/fechaactual.component';
+import { CopyrightComponent } from './copyright/copyright.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FechaactualComponent //se agrega el componente que se importó
+    FechaactualComponent,
+    CopyrightComponent //se agrega el componente que se importó
   ],
   imports: [
     BrowserModule
