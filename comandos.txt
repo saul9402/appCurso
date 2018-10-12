@@ -1,3 +1,4 @@
 ng new {nombre de app} #Con este comando se crea un nuevo proyecto con todo lo que se necesitta para trabajar (incluso el .gitignore)
 ng serve --port {puerto} #Este comando sirve para ejecutar la aplicacion con un perto especifico, sino s epone puerto se usara el 4200
 ng generate component {nombre del componente} --spec false #Este comando se usa para crear un template para componente nuevo la opcion spec se pone para que no genere los archivos de testeo
+ng g c {nombre del componente} --spec false #atajo para el de arriba
