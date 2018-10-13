@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule  } from '@angular/forms';
 
 //se importan los componentes usando el nombre que se uso en la clausula export
 //del archivo que se pretende importar y se le da la ruta de donde lo va a encontrar
@@ -10,6 +11,7 @@ import { ViewmodeloComponent } from './viewmodelo/viewmodelo.component';
 import { EjmetodoComponent } from './ejmetodo/ejmetodo.component';
 import { EjpropertybindingComponent } from './ejpropertybinding/ejpropertybinding.component';
 import { EjeventbindingComponent } from './ejeventbinding/ejeventbinding.component';
+import { Ej2waybindingComponent } from './ej2waybinding/ej2waybinding.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { EjeventbindingComponent } from './ejeventbinding/ejeventbinding.compone
     ViewmodeloComponent,
     EjmetodoComponent,
     EjpropertybindingComponent,
-    EjeventbindingComponent //se agrega el componente que se importó
+    EjeventbindingComponent,
+    Ej2waybindingComponent //se agrega el componente que se importó
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
