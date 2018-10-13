@@ -1,9 +1,25 @@
 <div class="container">
-  <label >Nombre y Apellidos</label>
+
+  <!-- Se agrega *ngIf y se iguala a un nombre, en realidad ahi debe ir una condicion que el ngIf evaluara
+    una vez evalada decidirá si hacer lo que está en la propiedad etiqueta, que en este caso sería mostrar el boton,
+o si hacer lo que hay en el else que apunta a "desactivado" si cae en el else ejecutará todo lo que esté
+en la etiqueta ng-template que para el caso es mostrar el boton pero deshabilitado
+  -->
+  <!--<label >Nombre y Apellidos</label>
   <input type="text" class="form-control" placeholder="complete nombre y apellidos"
-   [(ngModel)] = "nombre">
+   [(ngModel)] = "nombre"> 
   <button type="submit" class="btn btn-primary" *ngIf="nombre; else desactivado">Enviar</button>
   <ng-template #desactivado>
       <button type="submit" class="btn btn-primary" disabled>Enviar</button>
+  </ng-template>-->
+  <h3>¿Cual es la capital de España?</h3>
+  <input type="text" class="form-control" [(ngModel)] = "capital"> <!-- Asocia ngModel a la propiedad capital-->
+  <p *ngIf="!capital; else correcto">Complete la pregunta</p>
+  <ng-template #correcto> 
+    <h4  *ngIf="setResultado(); else incorrecto">¡Correcto!</h4>
+  </ng-template>
+
+  <ng-template #incorrecto> 
+    <h4>Lo siento, inténtelo de nuevo</h4>
   </ng-template>
 </div>
