@@ -12,6 +12,7 @@ import { EjmetodoComponent } from './ejmetodo/ejmetodo.component';
 import { EjpropertybindingComponent } from './ejpropertybinding/ejpropertybinding.component';
 import { EjeventbindingComponent } from './ejeventbinding/ejeventbinding.component';
 import { Ej2waybindingComponent } from './ej2waybinding/ej2waybinding.component';
+import { EjdirectivangifComponent } from './ejdirectivangif/ejdirectivangif.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { Ej2waybindingComponent } from './ej2waybinding/ej2waybinding.component'
     EjmetodoComponent,
     EjpropertybindingComponent,
     EjeventbindingComponent,
-    Ej2waybindingComponent //se agrega el componente que se importó
+    Ej2waybindingComponent,
+    EjdirectivangifComponent //se agrega el componente que se importó
   ],
   imports: [
     BrowserModule,
