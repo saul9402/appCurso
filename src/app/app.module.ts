@@ -17,6 +17,7 @@ import { EjdirectivangstyleComponent } from './ejdirectivangstyle/ejdirectivangs
 import { EjdirectivangclassComponent } from './ejdirectivangclass/ejdirectivangclass.component';
 import { EjdirectivanfgorComponent } from './ejdirectivanfgor/ejdirectivanfgor.component';
 import { EjarrayobjetosComponent } from './ejarrayobjetos/ejarrayobjetos.component';
+import { EjdirectivangswitchComponent } from './ejdirectivangswitch/ejdirectivangswitch.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { EjarrayobjetosComponent } from './ejarrayobjetos/ejarrayobjetos.compone
     EjdirectivangstyleComponent,
     EjdirectivangclassComponent,
     EjdirectivanfgorComponent,
-    EjarrayobjetosComponent //se agrega el componente que se importó
+    EjarrayobjetosComponent,
+    EjdirectivangswitchComponent //se agrega el componente que se importó
   ],
   imports: [
     BrowserModule,
