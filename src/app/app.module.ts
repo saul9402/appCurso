@@ -15,6 +15,8 @@ import { Ej2waybindingComponent } from './ej2waybinding/ej2waybinding.component'
 import { EjdirectivangifComponent } from './ejdirectivangif/ejdirectivangif.component';
 import { EjdirectivangstyleComponent } from './ejdirectivangstyle/ejdirectivangstyle.component';
 import { EjdirectivangclassComponent } from './ejdirectivangclass/ejdirectivangclass.component';
+import { EjdirectivanfgorComponent } from './ejdirectivanfgor/ejdirectivanfgor.component';
+import { EjarrayobjetosComponent } from './ejarrayobjetos/ejarrayobjetos.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { EjdirectivangclassComponent } from './ejdirectivangclass/ejdirectivangc
     Ej2waybindingComponent,
     EjdirectivangifComponent,
     EjdirectivangstyleComponent,
-    EjdirectivangclassComponent //se agrega el componente que se importó
+    EjdirectivangclassComponent,
+    EjdirectivanfgorComponent,
+    EjarrayobjetosComponent //se agrega el componente que se importó
   ],
   imports: [
     BrowserModule,
